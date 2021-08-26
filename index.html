@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Profile Card | Felix Diaz III</title>
+        <meta name="description" content="Simple profile card created in HTML and CSS with simple and basic javascript functions.">
+        <meta name="keywords" itemprop="keywords" content="profile, card, profile card, felix, diaz, felix diaz, va, intern, react js, react js intern, react javascript, react javascript intern, Portfolio, Resume, Developer, Freelancer, Virtual Assistant, E-Commerce Virtual Assistant, Data Entry, HTML, CSS, React JS"/>
+        <meta name="author" itemprop="author" content="Felix Diaz III"/>
+        <meta name="title" itemprop="title" content="Felix Diaz III | Profile Card"/>
+        <meta name="url" itemprop="url" id="meta-location" content=""/>
+        
+        <meta property="og:type" content="website"/>
+        <meta property="og:url" content="https://felixdiaz.netlify.app/"/>
+        <meta property="og:title" content="Felix Diaz III | Profile Card"/>
+        <meta property="og:description" content="Simple profile card created in HTML and CSS with simple and basic javascript functions."/>
+        <meta property="og:image" content="https://i.imgur.com/qBTnzdp.png"/>
+        <meta property="twitter:card" content="summary_large_image"/>
+        <meta property="twitter:url" content="https://felixdiaz.netlify.app/"/>
+        <meta property="twitter:title" content="Felix Diaz III | Profile Card"/>
+        <meta property="twitter:description" content="Simple profile card created in HTML and CSS with simple and basic javascript functions."/>
+        <meta property="twitter:image" content="https://i.imgur.com/qBTnzdp.png"/>
+        <!-- Fontawesome 5 Icons -->
+        <link href="font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet">
+
+        <link rel="stylesheet" href="assets/styles.css">
+    </head>
+    <body>
+        <section>
+            <main>
+                <!-- Card Container Starts -->
+                <div class="container">
+
+                    <div class="card-container">
+                        <!-- Card Starts -->
+                        <div class="card">
+
+                            <!-- Card Header Starts -->
+                            <div class="card-header">
+                                <div class="card-header-bg" style="background: url(images/bg.jpg); background-size: cover;">
+                                <div class="overlay-dark"></div>
+                                </div>
+                            </div>
+                            <!-- Card Header Ends -->
+
+                            <div class="card-body">
+                                <div class="card-avatar" style="background: url(images/profile-picture.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center;"></div>
+
+                                <!-- Profile Starts -->
+                                <div class="profile">
+                                    <div class="profile-info">
+                                        <div class="socials">
+                                            <a href="javascript:void(0)" onclick='socialFb()'><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                                            <a href="javascript:void(0)" onclick='socialGithub()'><i class="fa fa-github-square" aria-hidden="true"></i></a>
+                                            <a href="javascript:void(0)" onclick='socialLinkedin()'><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                                        </div>
+                                        <h2 class="profile-name" id="name"></h2>
+                                    <h3 class="profile-location" id="location"></h3>
+                                    </div>
+                                    
+
+                                    <!-- Bio Starts -->
+                                    <div class="profile-bio">
+                                        <p class="profile-bio-text" id="bio"></p>
+                                        <div class="profile-contact">
+                                            <button onclick='modalOpen()' id='modalToggle'>Message</button>
+                                            <button onclick='onclickInfo()' id='openUrl'>More Info</button>
+                                        </div>
+                                    </div>
+                                    <!-- Bio Ends -->
+
+                                    <!-- Skills Starts -->
+                                    <div class="profile-skills">                                        
+                                        <h3>Skills</h3>
+                                        <div class="skills-set" id="skills">
+                                            <!-- <p id="skills">UX/UI</p>
+                                            <p>Front End Development</p>
+                                            <p>React JS</p>
+                                            <p>Photoshop</p>
+                                            <p>Photoshop</p>
+                                         -->
+                                        </div>
+                                    </div>
+                                    <!-- Skills Ends -->
+
+                                </div>
+                                <!-- Profile Ends -->
+
+                            </div>
+
+                        </div>
+                        <!-- Card Ends -->
+                    </div>                    
+
+                </div>
+                <!-- Card Container Ends -->
+
+                <!-- Modal Form Starts -->
+                <div class="modal" id="modal">
+                    <div class="modal-container">
+                        <div class="form">
+                            <button onclick='modalClose()' class="modal-close"><i class="fa fa-times" aria-hidden="true"></i></button>
+                            <form>
+                                <div class="form-header">
+                                    <h3>Thank you for reaching me out!</h3>
+                                </div>
+                                <div class="form-input">
+                                    <label for="name">Name</label>
+                                    <div class="user-input">
+                                        <input type="text" name="name" placeholder="Please enter your name" required />
+                                    </div>
+                                    
+                                    <label for="email">Email</label>
+                                    <div class="user-input">
+                                        <input type="email" name="email" placeholder="Please enter your email" required />
+                                    </div>
+                                    
+                                    <label for="message">Message</label>
+                                    <div class="user-input">
+                                        <textarea name="message" id="" cols="30" rows="10" required></textarea>
+                                    </div>
+                                    
+                                    <button>Send</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal Form Ends -->
+            </main>
+        </section>
+
+        <script src="assets/script.js"></script>
+    </body>
+</html>
